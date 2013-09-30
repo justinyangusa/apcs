@@ -78,7 +78,7 @@
 
 (define (sub-interval x y)
   (add-interval x
-                (make-interval (upper-bound y) (lower-bound y))))
+                (make-interval (* -1 (upper-bound y)) (* -1 (lower-bound y)))))
 
 ; Exercise 2.9
 
