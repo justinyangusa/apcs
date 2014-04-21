@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+
+public class Hand extends LinkedList {
+    public Hand() {}
+    
+    public void put(Object o) {
+        addLast(o);
+    }
+    
+    public Object get() {
+        if (!this.isEmpty()) {
+            return removeFirst();
+        } else {
+            System.err.println("You can\'t do that!");
+            return null;
+        } 
+    }
+    
+    public Object peek() {
+        return getFirst();
+    }
+}

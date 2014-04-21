@@ -1,0 +1,20 @@
+public class Thing1 extends LinkedList {
+    public Thing1() {}
+    
+    public void put(Object o) {
+        addLast(o);
+    }
+    
+    public Object get() {
+        if (!this.isEmpty()) {
+            return removeFirst();
+        } else {
+            System.err.println("You can\'t do that!");
+            return null;
+        } 
+    }
+    
+    public Object peek() {
+        return getFirst();
+    }
+}

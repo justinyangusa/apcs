@@ -1,0 +1,28 @@
+public class Main {
+	Deck deck = new Deck();
+	Hand[] hands = new Hand[2];
+	
+	public void deal() {
+		while (deck.size() > 0) {
+			hands[0].put(deck.getCard());
+			hands[1].put(deck.getCard());
+		}
+	}
+	
+	public void playRound() {
+		
+	}
+	
+	public void playWar() {
+		deal();
+		while (!hands[0].isEmpty() && !hands[1].isEmpty()) {
+			playRound();
+		}
+		System.out.print("The winner of the game is... Player ");
+		if (hands[0].isEmpty()) {
+			System.out.println(2);
+		} else {
+			System.out.println(1);
+		}
+	}
+}
