@@ -1,0 +1,21 @@
+/**
+ * 
+ * @author Justin Yang
+ * @author Ken Noh
+ * Paley B Period APCS
+ * Homework for 12/9-12/13
+ * Scheme Exercise 1.16
+ * 
+ */
+
+public class LoopInvariant {
+	
+	int fast-expt(int b, int n) {
+		return 1;
+	}
+	
+	public static void main(String[] args) {
+		while
+	}
+
+}

@@ -1,0 +1,18 @@
+/**
+ * 
+ * @author Justin Yang
+ * @author Ken Noh
+ * Paley B Period APCS
+ * Homework for 12/9-12/13
+ *
+ */
+
+
+public class LoopInvariant {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

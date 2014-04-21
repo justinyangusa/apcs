@@ -1,0 +1,44 @@
+/*
+ * Java Homework #1: TriangleBug 
+ * Ken Noh and Justin Yang
+ */
+import info.gridworld.actor.ActorWorld;
+import info.gridworld.actor.Bug;
+import info.gridworld.actor.Rock;
+
+public class TriangleBug extends Bug {
+	private int steps;
+	private int sideLength;
+	private int track;
+
+	public TriangleBug() {
+		steps = 0;
+		sideLength = 6;
+	}
+	public TriangleBug(int length) {
+		steps = 0;
+		sideLength = length;
+	}
+
+	public void act() {
+		if (steps < sideLength && canMove()) {
+				move();
+				if(track%3==0)
+					steps++;
+				else steps+=2;
+		}
+		else {
+			if(track%3==0 || track%3==2){
+				for (int i = 0; i < 3; i++) {
+					turn();
+				}
+			}
+			else{
+				turn();
+				turn();
+			}
+			track++;
+			steps = 0;
+		}
+	}
+}
